@@ -121,6 +121,19 @@ def get_random_fact():
 # Main Streamlit app
 st.title("Freshers' Day 2k23")
 
+# Add a background image to the Streamlit app
+st.markdown(
+    """
+    <style>
+    body {
+        background-image: url("https://images.app.goo.gl/NdsNcBaniws5TFTx7");
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 # Get the list of participants from session state or create an empty set
 participants = st.session_state.get("participants", set())
