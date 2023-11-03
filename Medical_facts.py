@@ -136,7 +136,7 @@ if name:
         st.write(selected_fact)
 
     # Check if a participant will receive a joke
-    if random.random() < 1.00 and participants:
+    if random.random() < 0.05 and participants:
         random_player = random.choice(list(participants))
         st.write(f"Congratulations, {random_player}! You've won a joke:")
         st.write("Joke:", joke)
