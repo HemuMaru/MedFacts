@@ -124,23 +124,22 @@ participants = st.session_state.get("participants", set())
 
 name = st.text_input("Enter your name:")
 
-if name:
-    if name in participants:
-        st.write(f"Sorry, {name}, you've already played.")
-    else:
-        participants.add(name)
-        st.session_state.participants = participants
-        selected_fact = get_random_fact()
-        st.write(selected_fact)
-
-    # Check if a participant will receive a joke
-    if name == "Lucky Winner" and random.random() < 0.05:
-        st.write(f"Congratulations, {name}! You've won a joke:")
-        st.write("Joke:", joke)
-
-else:
-    st.write("Please enter your name.")
-
 if st.button("Click to Play"):
     selected_fact = get_random_fact()
     st.write(selected_fact)
+     if name:
+         if name in participants:
+             st.write(f"Sorry, {name}, you've already played.")
+         else:
+             participants.add(name)
+             st.session_state.participants = participants
+             selected_fact = get_random_fact()
+             st.write(selected_fact)
+
+         # Check if a participant will receive a joke
+         if name == "Lucky Winner" and random.random() < 0.05:
+             st.write(f"Congratulations, {name}! You've won a joke:")
+             st.write("Joke:", joke)
+
+         else:
+              st.write("Please enter your name.")
