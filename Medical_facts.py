@@ -5,11 +5,24 @@
 import streamlit as st
 import random
 
-# Background image
-background_image = "party.jpg"
+# Define the HTML and CSS for the background image
+background_image_html = """
+<style>
+body {
+    background-image: url('party.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #FFFFFF; /* Text color */
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+}
+</style>
+"""
 
-# Main Streamlit app
-st.image(background_image, use_column_width=True, caption='')
+# Display the background image using the HTML
+st.markdown(background_image_html, unsafe_allow_html=True)
+
 
 
 # List of medical facts
