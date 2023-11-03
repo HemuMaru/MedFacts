@@ -122,11 +122,14 @@ def get_random_fact():
 st.title("Freshers' Day 2k23")
 
 # Background image
-background_image = "party.jpg"
+#background_image = "party.jpg"
 
 # Main Streamlit app
-st.image(background_image, use_column_width=True, caption='')
+#st.image(background_image, use_column_width=True, caption='')
 
+# Display the background image
+background_image = "party.jpg"
+st.image(background_image, use_column_width=True)
 
 
 # Get the list of participants from session state or create an empty set
