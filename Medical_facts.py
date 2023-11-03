@@ -6,14 +6,23 @@ import streamlit as st
 import random
 
 #adding style
+# Set the background image using CSS in a <style> tag
 st.markdown(
     """
     <style>
-    {% include 'style.css' %}
+    body {
+        background-image: url('party.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: #FFFFFF; /* Text color */
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 # List of medical facts
 medical_facts = [
