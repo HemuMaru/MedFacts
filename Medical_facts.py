@@ -9,7 +9,7 @@ import random
 background_image_html = """
 <style>
 body {
-    background-image: url('party.jpg');
+    background-image: url('https://github.com/HemuMaru/MedFacts/blob/main/party.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
