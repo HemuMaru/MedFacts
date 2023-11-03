@@ -1,15 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
-
 
 import streamlit as st
 import random
 
 # List of medical facts
 medical_facts = [
-    # Add your list of medical facts here
      "The adult human body has 206 bones.",
     "The heart pumps about 70 times per minute at rest.",
     "The liver is the largest solid organ in the body.",
