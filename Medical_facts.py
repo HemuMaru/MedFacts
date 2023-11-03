@@ -141,6 +141,12 @@ if name:
 else:
     st.write("Please enter your name.")
 
+# Add a button to get a random fact or joke
+if st.button("Click to play"):
+    selected_fact = get_random_fact()
+    st.write(selected_fact)
+#Now, the user can enter their name or simply click the "Click to play" button to get a random fact or joke.
+
 
 # In[ ]:
 
