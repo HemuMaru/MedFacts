@@ -121,15 +121,15 @@ def get_random_fact():
 # Main Streamlit app
 st.title("Freshers' Day 2k23")
 
-# Define the background image
-background_image = 'party.jpg'
+# Define the background image URL
+background_image_url = 'party.jpg'
 
-# Apply the background image using HTML and CSS
+# Apply the background image using CSS
 st.markdown(
     f"""
     <style>
         .reportview-container {{
-            background: url(data:image/jpeg;base64,{background_image});
+            background: url('{background_image_url}');
             background-size: cover;
         }}
     </style>
