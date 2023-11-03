@@ -5,24 +5,14 @@
 import streamlit as st
 import random
 
-# Define the HTML and CSS for the background image
-background_image_html = f"""
-<style>
-body {{
-    background-image: url('https://images.app.goo.gl/NdsNcBaniws5TFTx7');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    color: #FFFFFF; /* Text color */
-    font-family: Arial, sans-serif; /* Choose your preferred font */
-}}
-</style>
-"""
-
-# Display the background image using the HTML
-st.markdown(background_image_html, unsafe_allow_html=True)
-
+# Set the background image using st.set_page_config
+st.set_page_config(
+    page_title="Medical Facts and Jokes",
+    page_icon="🧬",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    background_image="party.jpg",  # Replace with the URL of your image
+)
 
 
 # List of medical facts
