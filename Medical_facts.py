@@ -11,7 +11,7 @@ st.markdown(
     """
     <style>
     body {
-        background-image: url('https://images.app.goo.gl/NdsNcBaniws5TFTx7');
+        background-image: url('https://images.app.goo.gl/NdsNcBaniws5TFTx7.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
