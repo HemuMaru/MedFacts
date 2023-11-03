@@ -141,8 +141,7 @@ if name:
 else:
     st.write("Please enter your name.")
 
-
-     if st.button("Click to Play"):
+if st.button("Click to Play"):
     selected_fact = get_random_fact()
     st.write(selected_fact
 #Now, the user can enter their name or simply click the "Click to play" button to get a random fact or joke.
