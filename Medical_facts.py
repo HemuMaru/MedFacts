@@ -6,9 +6,9 @@ import streamlit as st
 import random
 
 # Define the HTML and CSS for the background image
-background_image_html = """
+background_image_html = f"""
 <style>
-body {
+body {{
     background-image: url('https://github.com/HemuMaru/MedFacts/raw/main/party.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ body {
     background-position: center;
     color: #FFFFFF; /* Text color */
     font-family: Arial, sans-serif; /* Choose your preferred font */
-}
+}}
 </style>
 """
 
