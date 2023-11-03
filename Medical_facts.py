@@ -5,6 +5,16 @@
 import streamlit as st
 import random
 
+#adding style
+st.markdown(
+    """
+    <style>
+    {% include 'style.css' %}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # List of medical facts
 medical_facts = [
     # Add your list of medical facts here
