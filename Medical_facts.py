@@ -118,7 +118,7 @@ def get_random_fact():
     return random.choice(medical_facts)
 
 # Main Streamlit app
-st.title("Medical Facts and Jokes")
+st.title("Freshers' Day 2k23")
 
 # Get the list of participants from session state or create an empty set
 participants = st.session_state.get("participants", set())
